@@ -1,30 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flash Filer</title>
+    <title>Jay's Projects</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap">
     <style>
         body {
-            background: linear-gradient(to bottom, #007bff, #00a8ff);
+            background: linear-gradient(to bottom, #0000FF 60%, #000000);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Noto Sans', sans-serif;
         }
-        
-        .button {
-            display: inline-block;
+
+        header {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            align-items: center;
+        }
+
+        button {
+            background-color: #008000;
+            color: white;
             padding: 10px 20px;
-            background-color: #fff;
-            color: #007bff;
             font-size: 16px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px; /* Adjusted margin for spacing between buttons */
         }
-        
-        .button:hover {
-            background-color: #007bff;
-            color: #fff;
+
+        button:hover {
+            background-color: #004d00;
+        }
+
+        p {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        /* Adjusted styles to allow scrolling */
+        body, html {
+            height: 100%;
+            overflow: auto;
         }
     </style>
 </head>
 <body>
-    <button class="button">Downloads</button>
+    <header>
+        <div class="title-container">
+            <div class="button-container">
+                <button onclick="window.location.href='your_about_me_link_here'">About Me</button>
+            </div>
+            <h1>Welcome to Jay's Projects</h1>
+            <div class="button-container">
+                <button onclick="window.location.href='your_downloads_link_here'">Downloads</button>
+            </div>
+        </div>
+    </header>
+    
+    <p>
+        Hi there! I'm Jay, a kid who loves making cool stuff with code. I enjoy experimenting with Scratch and other coding platforms to bring my ideas to life. Whether it's creating games, animations, or interactive projects, coding fuels my creativity and keeps me engaged.
+    </p>
+    <p>
+        If you're interested in checking out some of my projects, feel free to explore them at <a href="https://www.example.com">example.com</a>.
+    </p>
+    <!-- Additional content to make the page longer -->
+    <!-- Add more paragraphs or elements as needed -->
+    <!-- Example: -->
+    <p>Feel free to scroll and explore more about my coding adventures!</p>
+    <p>More content goes here...</p>
 </body>
 </html>
